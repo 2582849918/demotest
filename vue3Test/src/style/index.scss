@@ -1,0 +1,118 @@
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  font-size: 14px;
+  height: 100%;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="checkbox"] {
+  padding: 0;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+
+  &::placeholder {
+    color: #999;
+  }
+}
+
+.ellipsis {
+  // 文字不换行
+  white-space: nowrap;
+  // 文字溢出用 ... 代替
+  text-overflow: ellipsis;
+  // 溢出盒子的文字清除
+  overflow: hidden;
+}
+
+.ellipsis-2 {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.y-center {
+  align-items: center;
+}
+
+.x-center {
+  justify-content: center;
+}
+
+.x-between {
+  justify-content: space-between;
+}
+
+.x-end {
+  justify-content: end;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
